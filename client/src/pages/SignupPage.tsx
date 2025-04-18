@@ -5,7 +5,7 @@ import SignupForm from "@/components/auth/signup-form";
 const SignupPage = () => {
   return (
     <Layout>
-      <div className="max-w-md mx-auto">
+      <div className="max-w-md mx-auto ">
         <SignupForm />
       </div>
     </Layout>

@@ -20,7 +20,7 @@ const Header = () => {
   
   return (
     <header className="border-b border-border sticky top-0 bg-background z-10">
-      <div className="container flex items-center justify-between h-16">
+      <div className="container flex items-center justify-between h-16 mx-w-full px-4">
         <div className="flex items-center gap-2">
           <Link to="/" className="text-2xl font-bold text-primary">
             Collabo
