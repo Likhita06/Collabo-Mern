@@ -1,5 +1,4 @@
-
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/layout";
@@ -9,12 +8,12 @@ const Index = () => {
   const navigate = useNavigate();
   
   // Check if user is already logged in
-  // useEffect(() => {
-  //   const userInfo = JSON.parse(localStorage.getItem("user") || "{}");
-  //   if (userInfo.isLoggedIn) {
-  //     navigate("/create-room");
-  //   }
-  // }, [navigate]);
+  useEffect(() => {
+    const userInfo = JSON.parse(localStorage.getItem("user") || "{}");
+    if (userInfo.isLoggedIn) {
+      navigate("/create-room");
+    }
+  }, [navigate]);
 
   return (
     <Layout>

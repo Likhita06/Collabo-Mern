@@ -16,13 +16,13 @@ import { PiPencilSimpleFill } from "react-icons/pi"
 import {
     RiFileAddLine,
     RiFolderAddLine,
-    RiFolderUploadLine,
+    // RiFolderUploadLine,
 } from "react-icons/ri"
 import RenameView from "./RenameView"
 import useResponsive from "@/hooks/useResponsive"
 
 function FileStructureView() {
-    const { fileStructure, createFile, createDirectory, collapseDirectories } =
+    const { fileStructure, createFile, createDirectory} =
         useFileSystem()
     const explorerRef = useRef<HTMLDivElement | null>(null)
     const [selectedDirId, setSelectedDirId] = useState<Id | null>(null)
@@ -74,13 +74,13 @@ function FileStructureView() {
                     >
                         <RiFolderAddLine size={20} />
                     </button>
-                    <button
+                    {/* <button
                         className="rounded-md px-1 hover:bg-darkHover"
                         onClick={collapseDirectories}
                         title="Collapse All Directories"
                     >
                         <RiFolderUploadLine size={20} />
-                    </button>
+                    </button> */}
                 </div>
             </div>
             <div

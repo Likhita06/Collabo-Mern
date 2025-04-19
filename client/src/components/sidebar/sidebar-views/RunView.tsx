@@ -1,8 +1,8 @@
 import { useRunCode } from "@/context/RunCodeContext"
 import useResponsive from "@/hooks/useResponsive"
 import { ChangeEvent } from "react"
-import toast from "react-hot-toast"
-import { LuCopy } from "react-icons/lu"
+// import toast from "react-hot-toast"
+// import { LuCopy } from "react-icons/lu"
 import { PiCaretDownBold } from "react-icons/pi"
 
 function RunView() {
@@ -22,10 +22,10 @@ function RunView() {
         setSelectedLanguage(lang)
     }
 
-    const copyOutput = () => {
-        navigator.clipboard.writeText(output)
-        toast.success("Output copied to clipboard")
-    }
+    // const copyOutput = () => {
+    //     navigator.clipboard.writeText(output)
+    //     toast.success("Output copied to clipboard")
+    // }
 
     return (
         <div

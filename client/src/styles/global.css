@@ -1,4 +1,4 @@
-@import url("tldraw/tldraw.css");
+/* @import url("tldraw/tldraw.css"); */
 
 @tailwind base;
 @tailwind components;
@@ -84,9 +84,7 @@ select {
 
 /* Github Corner */
 
-.github-corner:hover .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-}
+
 
 @keyframes octocat-wave {
     0%,
